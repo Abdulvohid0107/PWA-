@@ -10,8 +10,8 @@ const assets = [
 self.addEventListener("install", installEvent => {
   // html, css, js fayllarni keshlar uchun funktsiya
   installEvent.waitUntil(
-    cache.open(staticColorPicker).then(cache => {
-      caches.addAll(assets);
+    caches.open(staticColorPicker).then(cache => {
+      cache.addAll(assets);
     })
   );
 });
