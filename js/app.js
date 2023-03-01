@@ -12,6 +12,7 @@ const copy = () => {
   demo.style.opacity = "1"
 }
 
+
 // service workeni ro'xattan o'tkazish
 
 if ("serviceWorker" in navigator) {
